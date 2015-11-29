@@ -3,29 +3,39 @@
   <head>
     <meta charset="utf-8">
       <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="sassy.scss" media="screen" title="no title" charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+      <!-- Boostrap -->
+      <!-- Font  -->
     <title>Gig Bag</title>
   </head>
   <body>
 
+    <body ng-app="gigBag">
 
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
-    <script type="text/javascript" src="bower_components/moment/moment.js"></script>
+      <ng-view></ng-view>
 
-  <!-- common module -->
-    <script src="common/app.module.js" charset="utf-8"></script>
-    <script src="common/app.controllers.js" charset="utf-8"></script>
-    <script src="common/app.services.js" charset="utf-8"></script>
 
-  <!-- likes module -->
-    <script src="likes/likes.module.js" charset="utf-8"></script>
-    <script src="likes/likes.controller.js" charset="utf-8"></script>
-    <script src="likes/likes.service.js" charset="utf-8"></script>
+    <!-- libraries -->
+      <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+      <script src="bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+      <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+      <script type="text/javascript" src="bower_components/moment/moment.js"></script>
 
-  <!-- flickr module -->
-    <script src="flickr/flickr.module.js" charset="utf-8"></script>
-    <script src="flickr/flickr.controller.js" charset="utf-8"></script>
-    <script src="flickr/flickr.service.js" charset="utf-8"></script>
+    <!--common mod-->
+      <script src="common/app.main.js" charset="utf-8"></script>
+      <script src="common/app.controllers.js" charset="utf-8"></script>
+      <script src="common/app.services.js" charset="utf-8"></script>
+
+    <!--likes mod -->
+      <script src="likes/likes.module.js" charset="utf-8"></script>
+      <script src="likes/likes.controller.js" charset="utf-8"></script>
+      <script src="likes/likes.service.js" charset="utf-8"></script>
+
+    <!-- gig-bag shop module-->
+      <script src="shop/shop.modules.js" charset="utf-8"></script>
+      <script src="shop/shop.controllers.js" charset="utf-8"></script>
+      <script src="shop/shop.services.js" charset="utf-8"></script>
+
   </body>
 </html>
