@@ -1,0 +1,23 @@
+{
+  "name": "gig-bag",
+  "homepage": "https://github.com/jsbilton/gig-bag",
+  "description": "things for your gig",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Jared Bilton"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "angular-route": "~1.4.8"
+  }
+}
