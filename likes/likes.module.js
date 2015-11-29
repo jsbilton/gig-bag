@@ -11,7 +11,7 @@
     .config(function ($routeProvider) {
       $routeProvider
         .when('/likes', {
-          template: '<h1>Liked Gear</h1><a href="#/gearlist">Search by Gear</a>',
+          template: '<h1>Gear for Me</h1><a href="#/gearlist">Search by Gear</a>',
           controller: 'MainCntrl'
         })
         .when('/likeslist',{
