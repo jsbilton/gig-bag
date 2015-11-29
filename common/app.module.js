@@ -3,7 +3,7 @@
   "use strict";
 
   angular
-    .module('flickrgram', [
+    .module('gigBag', [
       'ngRoute',
       'underscore',
       'moment',
