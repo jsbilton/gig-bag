@@ -4,7 +4,7 @@
 
   angular
   .module('shop')
-  .controller('ShopCntrl', function ($scope, ShopService. $routeParams, LikesService) {
+  .controller('ShopController', function ($scope, ShopService. $routeParams, LikesService) {
     ShopService.getShops().then(function(shops){
       $scope.shops = shops;
       if($routeParams.shopId){

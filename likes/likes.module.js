@@ -12,15 +12,15 @@
       $routeProvider
         .when('/likes', {
           template: '<h1>Gear for Me</h1><a href="#/gearlist">Search by Gear</a>',
-          controller: 'MainCntrl'
+          controller: 'MainController'
         })
         .when('/likeslist',{
           template: 'likes/views/list.html', //have to setup views and list.html
-          controller: 'LikesCntrl'
+          controller: 'LikesController'
         })
         .when('/likes/:likesId',{
           template: 'likes/views/detail.html', //setup detail.html
-          controller: 'LikesCntrl'
+          controller: 'LikesController'
         })
         .when('/404', {
           template: '<h1> Sorry, the page you are attemping to access cannot be found!</h1>'

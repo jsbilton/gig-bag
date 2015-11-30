@@ -3,6 +3,6 @@
 
   angular
     .module('gigBag')
-    .controller('MainCntrl', function ($scope) {
+    .controller('MainController', function ($scope) {
     });
 })();

@@ -12,11 +12,11 @@
       $routeProvider
         .when('/',{
           template: 'shop/views/list.html', //have to setup views and list.html
-          controller: 'ShopCntrl'
+          controller: 'ShopController'
         })
         .when('/:shopId',{
           template: 'shop/views/detail.html', //setup detail.html
-          controller: 'ShopCntrl'
+          controller: 'ShopController'
         })
         .when('/404', {
           template: '<h1> Sorry, the page you are attemping to access cannot be found!</h1>'

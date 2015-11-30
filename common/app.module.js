@@ -14,7 +14,7 @@
       $routeProvider
         .when('/', {
           template: '<h1>Welcome to Gig Bag</h1><a href="#/gearlist">Search by Gear</a>',
-          controller: 'MainCntrl'
+          controller: 'MainController'
         })
         .when('/404', {
           template: '<h1> Sorry, the page you are attemping to access cannot be found!</h1>'

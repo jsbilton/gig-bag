@@ -4,7 +4,7 @@
 
   angular
   .module('likes')
-  .controller('LikesCntrl', function ($scope, LikesService. $routeParams) {
+  .controller('LikesController', function ($scope, LikesService. $routeParams) {
     LikesService.getLikes().then(function(like){
       $scope.likes = likes;
       if($routeParams.likesId){
