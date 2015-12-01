@@ -3,19 +3,19 @@
   "use strict";
 
   angular
-    .module('gigBag', [
+    .module('shop', [
       'ngRoute',
       'underscore',
-      'moment',
+      'moment'
     ])
     .config(function ($routeProvider) {
       $routeProvider
-        .when('/',{
-          template: 'shop/views/list.html', //have to setup views and list.html
+        .when('/shop',{
+          templateUrl: 'shop/views/list.html', //have to setup views and list.html
           controller: 'ShopController'
         })
-        .when('/:shopId',{
-          template: 'shop/views/detail.html', //setup detail.html
+        .when('/shop/:shopId',{
+          templateUrl: 'shop/views/detail.html', //setup detail.html
           controller: 'ShopController'
         })
         .when('/404', {

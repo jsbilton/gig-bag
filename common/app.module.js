@@ -7,8 +7,7 @@
       'ngRoute',
       'underscore',
       'moment',
-      'gigBag',
-      'likes',
+      'shop'
     ])
     .config(function ($routeProvider) {
       $routeProvider

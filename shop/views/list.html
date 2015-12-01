@@ -1,20 +1,8 @@
-<!-- Calvins DEMO CODE
-<article ng-repeat="photo in photos" class="photo" data-id="{{photo.id}}">
-  <header >
-    <img src="http://www.fillmurray.com/50/50" alt="" />
+<article ng-repeat="gear in equipment" class="gear" data-id="{{gear.id}}">
 
-    <div ng-class="{black: photo.likes}">
-      <a href="#/photos/{{photo.id}}">{{photo.title}}</a>
-      <span>{{photo.likes}}</span>
-    </div>
-    <a href="#">{{photo.dt}}</a>
-  </header>
-  <div class="pContain">
-      <img ng-src="{{photo.image}}" alt="" />
+      <h1>{{gear.title}}</h1>
+      <p>{{gear.summary}}</p>
+      <h2>{{gear.used_low_price.amount}}</h2>
+      <img ng-src="{{gear.photos._link.small_crop.href}}" alt="gear image" />
 
-      <div class="like">
-        <span ng-click="likePhoto(photo)">&#9825;</span>
-      </div>
-  </div>
-
-</article> -->
+</article>
