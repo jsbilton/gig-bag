@@ -2,7 +2,10 @@
 
       <h1>{{gear.title}}</h1>
       <p>{{gear.summary}}</p>
-      <h2>{{gear.used_low_price.amount}}</h2>
-      <img ng-src="{{gear.photos._link.small_crop.href}}" alt="gear image" />
-
+      <h2>{{gear.used_low_price.amount | currency}}</h2>
+      <img ng-src="{{gear.photos[0]._links.small_crop.href}}" alt="gear image" />
+      <!-- all dont have pics above here, way to set a default? -->
+      <div class="addToLike">
+        <span ng-click="likeItem(item)">&#9825;</span>
+      </div>
 </article>

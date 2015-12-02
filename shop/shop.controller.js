@@ -9,6 +9,8 @@
       ShopServices.getCategories().success(function (data) {
       console.log(data);
       $scope.equipment = data.comparison_shopping_pages;
+      //var loadEquipment = this;
+      //loadEquipment.data.comparison_shopping_pages = ''
     })
     };
     loadEquipment();
